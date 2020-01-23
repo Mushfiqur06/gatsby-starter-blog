@@ -28,7 +28,7 @@ a {
     &:hover,
     &:focus{
         color: $secondaryColor;
-        text-decoration: none
+        text-decoration: none !important;
     }
 }
 .transition{
