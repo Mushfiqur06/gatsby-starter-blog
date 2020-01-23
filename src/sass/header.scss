@@ -1,0 +1,27 @@
+@import './commom.scss';
+
+.header {
+    width: 100%;
+    z-index: 1000;
+
+    .navbar {
+        background-color: $whiteColor;
+        padding: 25px 0;
+
+        .navbar-nav {
+            a {
+                color: #4c4c4c;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 5px 15px;
+                transition: all .3s ease-in-out;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+
+                &:hover{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
