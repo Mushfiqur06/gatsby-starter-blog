@@ -1,0 +1,143 @@
+@import './Variable.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: bitter, serif;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    color: $textColor;
+    background-color: $backgroundColor;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+a {
+    color: $secondaryColor;
+
+    &:hover,
+    &:focus{
+        color: $secondaryColor;
+        text-decoration: none
+    }
+}
+.transition{
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+a,
+a>* {
+    cursor: pointer;
+    text-decoration: none
+}
+
+.btn,
+.form-control,
+.form-control:hover,
+.form-control:focus,
+.navbar-custom .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+button:focus {
+    outline: none !important
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    margin: 0 0 15px;
+    color: $headingColor;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 50px
+}
+
+h2 {
+    font-size: 23px;
+    line-height: 30px
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 25px
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 20px
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 18px
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 16px
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 30px;
+        line-height: 35px
+    }
+}
+
+p {
+    margin-bottom: 15px
+}
+
+p img {
+    margin: 0
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden
+}
+
+.screen-reader-text:focus {
+    background-color: $backgroundColor;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+}
