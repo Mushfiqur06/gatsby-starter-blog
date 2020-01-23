@@ -1,0 +1,66 @@
+@import './commom.scss';
+
+.blogSection {
+    background-color: $backgroundColor;
+    .blogWrapper {
+        background-color: $whiteColor;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+        box-shadow: 0px 49px 72px 0px rgba(25, 25, 25, 0.12);
+            -webkit-box-shadow: 0px 49px 72px 0px rgba(25, 25, 25, 0.12);
+            -moz-box-shadow: 0px 49px 72px 0px rgba(25, 25, 25, 0.12);
+            -ms-box-shadow: 0px 49px 72px 0px rgba(25, 25, 25, 0.12);
+            -o-box-shadow: 0px 49px 72px 0px rgba(25, 25, 25, 0.12);
+
+        &:hover {
+            
+
+            .blogWrapper__image a img {
+                transform: scale(1.2);
+            }
+
+            .blogWrapper__content {
+                &--title {
+                    a {
+                        background-position: -99.9%;
+                    }
+                }
+            }
+        }
+
+        &__image {
+            overflow: hidden;
+            border-radius: 5px 5px 0px 0px;
+
+            a {
+                img {
+                    width: 100%;
+                    border-radius: 5px 5px 0px 0px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+
+        &__content {
+            padding: 20px;
+
+            &--title {
+                word-wrap: break-word;
+                -ms-word-wrap: break-word;
+                font-size: 20px;
+                font-family: 'Raleway';
+                font-weight: 700;
+                line-height: 28px;
+
+                a {
+                    color: $headingColor;
+                    text-transform: capitalize;
+                    background-image: linear-gradient(to right, transparent 50.03%, #ffcc00 50%);
+                    background-position: 0;
+                    background-size: 200%;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
